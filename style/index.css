@@ -197,7 +197,7 @@ body{
 .banner_group{
 	width: 100%;
 	display: flex;
-	transform: /*0~-300%*/translateX(-300%);
+	transform: /*0~-300%*/translateX(-000%);
 }
 
 .banner_item{
@@ -305,7 +305,7 @@ body{
 	padding-right: 50px;
 }
 .banner_item:nth-child(4) .banner_minitxt{
-	width: 45%;
+	width: 29%;
 }
 
 .banner_dots{
@@ -436,7 +436,7 @@ body{
 .SP_box{
 	width: 100%;
 	background: url('../images/bg_SP.png')no-repeat center center/cover;
-	padding: 80px 0;
+	padding: 80px 0 50px;
 	text-align: center;
 	overflow: hidden;
 }
@@ -764,12 +764,22 @@ footer{
 }
 .partner_pic{
 	position: relative;
+	display: flex;
 	margin-top: 50px;
-	padding-bottom: calc(33% * 0.42922374);
+	padding: 0 50px;
+	flex-wrap: wrap;
+}
+.partner_pic li{
+	position: relative;
+	width: calc( 100% / 4);
+	padding-bottom: calc(25% * 0.22222222);
+	margin-bottom: 50px;
 }
 .partner_pic img{
 	position: absolute;
 	height: 100%;
+	left: 0;right: 0;
+	margin: 0 auto;
 }
 .partner_pic img:nth-child(1){
 	left: 0;
@@ -827,6 +837,10 @@ screen and (-ms-high-contrast: active), (-ms-high-contrast: none){
 	}
 	.txt_box::after {
 		top: 85%;
+	}
+	
+	.banner_item:nth-child(4) .banner_minitxt{
+		width: 45%;
 	}
 	
 }
@@ -1071,6 +1085,15 @@ screen and (-ms-high-contrast: active), (-ms-high-contrast: none){
 	.list_txt{
 		display: none;
 	}
+	.partner_pic {
+		padding: 0;
+	}
+	.partner_pic li{
+		position: relative;
+		width: calc( 100% / 3);
+		padding-bottom: calc(100% / 3 * 0.22222222);
+		margin-bottom: 50px;
+	}
 	
 }
 @media (max-width: 576px){
@@ -1115,12 +1138,12 @@ screen and (-ms-high-contrast: active), (-ms-high-contrast: none){
 	}
 	.partner_pic{
 		margin-top: 50px;
-		padding: 0 15%;
+		padding: 0 15px;
 	}
-	.partner_pic img{
-		position: relative;
-		width: 100%;
+	.partner_pic li{
+		margin-bottom: 30px;
 	}
+
 	.partner_pic img:nth-child(2){
 		transform: translateX(0);
 	}
@@ -1223,6 +1246,12 @@ screen and (-ms-high-contrast: active), (-ms-high-contrast: none){
 @media (max-width: 360px){
 	.banner_item:nth-child(2) .banner_bigtxt{
 		font-size: 35px;
+	}
+	.partner_pic li{
+		position: relative;
+		width: calc( 100% / 2);
+		padding-bottom: calc(100% / 2 * 0.22222222);
+		margin-bottom: 50px;
 	}
 }
 /* banner */
