@@ -13,7 +13,7 @@
 	<link rel="stylesheet" href="../style/animation.css">
 </head>
 
-<body>
+<body ontouchstart="">
 	<!-- 最上列 -->
 	<div class="header">
 		<div class="logo"></div>
@@ -128,7 +128,7 @@
 	<!-- banner -->
 
 	<!-- 產品服務 -->
-	<div class="product">
+	<div id="hm_1" class="product bg_triangle_in_out active">
 		<div class="product_inf">
 			<div class="product_txt">
 				<div class="mod_bigtxt mod_font_en">PRODUCT</div>
@@ -155,7 +155,7 @@
 
 	<!-- 服務項目與合作流程 -->
 	<div class="SP_box">
-		<div class="scrvic">
+		<div id="hm_2" class="scrvic bg_bubbles_in_out">
 			<div class="txt_box">
 				<div class="mod_bigtxt gradient" data-title="SERVICE">SERVICE</div>
 				<div class="mod_midtxt txt_shadow">服務項目與流程</div>
@@ -188,7 +188,7 @@
 			</div>
 		</div>
 
-		<div class="partner">
+		<div id="hm_3" class="partner">
 			<div class="mod_bigtxt gradient" data-title="PARNER">PARNER</div>
 			<div class="mod_midtxt txt_shadow">合作流程</div>
 			<ul class="partner_ul">
@@ -257,7 +257,7 @@
 	</div>
 	<!-- 服務項目與合作流程 -->
 	<!-- 聯絡我們 -->
-	<div class="contact">
+	<div id="hm_4" class="contact">
 		<span class="title border">CONTACT US</span>
 		<div class="mod_minitxt txt_shadow">
 			IF YOU GOT ANY QUESTIONS
@@ -279,9 +279,7 @@
 			<li>service@mail.bb-in.com</li>
 		</ul>
 
-
-
-		<ul class="bg-bubbles">
+		<ul class="bg_bubbles">
 			<li></li>
 			<li></li>
 			<li></li>
@@ -301,16 +299,16 @@
 
 	<footer>© 2020 ROYAL Gaming. All Rights Reserved.</footer>
 
-	<!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js'></script>
 	<script>
 		var scroll = $(window).scroll(function () {
-			for (var i = 1; i < 3; i++) {
+			for (var i = 1; i < 4; i++) {
 				if (scroll.scrollTop() > $(`#hm_${i}`).offset().top + $(`#hm_${i}`).height() / 3 * 2) {
 					$(`#hm_${i + 1}`).addClass('active')
 				}
 			}
 		})
-	</script> -->
+	</script>
 </body>
 
 </html>
