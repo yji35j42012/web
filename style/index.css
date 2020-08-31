@@ -1004,7 +1004,10 @@ footer{
 .icon_process{
 	background: url('../images/icon_process_w.svg')no-repeat;
 }
-
+.partner .mod_bigtxt{
+	-webkit-transform: translate3d(0, 0, 0);
+	-webkit-backface-visibility: hidden;
+}
 .partner .mod_midtxt{
 	margin-bottom: 80px;
 }
