@@ -46,7 +46,9 @@ body {
 	height: 100%;
 	color: #1D1A31;
 	touch-action: manipulation;
-	font-size: 13px;
+	font-family: 'Noto Sans TC', sans-serif;
+	font-size: 13px;	
+	scroll-behavior: smooth;
 }
 *:hover,
 *:focus,
@@ -80,7 +82,7 @@ input,
 button,
 select,
 textarea {
-	font-family: 'Helvetica', sans-serif;
+	font-family: 'Noto Sans TC', sans-serif;
 	padding: 0;
 	border: 0;
 	background-color: transparent;
@@ -113,7 +115,7 @@ table {
 }
 
 tt {
-	font-family: 'Helvetica', sans-serif;
+	font-family: 'Noto Sans TC', sans-serif;
 }
 
 
