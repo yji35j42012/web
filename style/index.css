@@ -40,11 +40,9 @@ body{
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	filter: drop-shadow(2px 2px #000);	
-	-webkit-filter: drop-shadow(2px 2px #000);	
 }
 .txt_shadow{
 	filter: drop-shadow(2px 2px #000);
-	-webkit-filter: drop-shadow(2px 2px #000);	
 }
 /* share use end*/
 
@@ -644,30 +642,29 @@ img.icon_poker4{
 .game_list {
 	width: 100%;
 	display: flex;
-	
 }
 .game_list li {
 	position: relative;
 	width: calc(100% / 4);
-	padding-bottom: calc( 100% / 4 * 1.00985222);
+	padding-bottom: calc( 100% / 4 * 1.0);
 	background: #ccf;
 	transition: all 500ms cubic-bezier(.55,0,.42,1);
 }
 .game_list li:nth-child(1){
-	background: url('../images/game-01.jpg')no-repeat center ;
-	background-size: 100%  ;
+	background: url('../images/game-01.jpg')no-repeat center; 
+	background-size: 100% ;
 }
 .game_list li:nth-child(2){
-	background: url('../images/game-02.jpg')no-repeat center ;
-	background-size: 100%  ;
+	background: url('../images/game-02.jpg')no-repeat center; 
+	background-size: 100% ;
 }
 .game_list li:nth-child(3){
-	background: url('../images/game-03.jpg')no-repeat center ;
-	background-size: 100%  ;
+	background: url('../images/game-03.jpg')no-repeat center; 
+	background-size: 100% ;
 }
 .game_list li:nth-child(4){
-	background: url('../images/game-04.jpg')no-repeat center ;
-	background-size: 100%  ;
+	background: url('../images/game-04.jpg')no-repeat center; 
+	background-size: 100% ;
 }
 
 
@@ -953,9 +950,15 @@ img.icon_poker4{
 	margin: auto 0;
 	vertical-align: middle;
 }
-.method li:nth-child(2)::before{background: url('../images/icon_wechat.svg') no-repeat}
-.method li:nth-child(3)::before{background: url('../images/icon_skype.svg') no-repeat}
-.method li:nth-child(4)::before{background: url('../images/icon_mail.svg') no-repeat}
+.method li:nth-child(2)::before{
+	background: url('../images/icon_wechat.svg') no-repeat center/contain;
+}
+.method li:nth-child(3)::before{
+	background: url('../images/icon_skype.svg') no-repeat center/contain;
+}
+.method li:nth-child(4)::before{
+	background: url('../images/icon_mail.svg') no-repeat center/contain;
+}
 
 
 footer{
@@ -1004,10 +1007,7 @@ footer{
 .icon_process{
 	background: url('../images/icon_process_w.svg')no-repeat;
 }
-.partner .mod_bigtxt{
-	-webkit-transform: translate3d(0, 0, 0);
-	-webkit-backface-visibility: hidden;
-}
+
 .partner .mod_midtxt{
 	margin-bottom: 80px;
 }
