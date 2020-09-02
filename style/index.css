@@ -25,7 +25,7 @@ body{
 	color: #fff;
 	font-size: 16px;
 }
-
+.txt_shadow{text-shadow: 1px 0px #000, 1px 1px 1px #000;}
 [class*="_btn"]:not(:disabled){
 	cursor: pointer;
 }
@@ -34,7 +34,6 @@ body{
 	position: relative;
 	color: transparent;
 	text-shadow: 1px 0px #000, 1px 1px 1px #000;
-	margin-bottom: 10px;
 }
 .gradient::before{
 	position: absolute;
@@ -196,12 +195,14 @@ body{
 	font-size: 24px;
 	color: #FFFFCD;
 	margin-bottom: 5px;
+	text-shadow: 1px 0px #000, 1px 1px 1px #000;
 }
 .banner_minitxt{
 	position: relative;
 	font-size: 14px;
 	color: #fff;
 	line-height: 30px;
+	text-shadow: 1px 0px #000, 1px 1px 1px #000;
 }
 .banner_group{
 	width: 100%;
