@@ -1037,21 +1037,22 @@
     -ms-transform-origin: 0 100%;
     -webkit-transform-origin: 0 100%;
     transform-origin: 0 100%;
+    transform: rotate(-75deg);
     -webkit-animation: laser 7s infinite;
 }
 
 .light_v2 .light_v22 {
-    -webkit-animation: laser 7.5s infinite;
+    -webkit-animation: laser 7.5s infinite .5s;
     background: #fffaa9;
-    box-shadow: 0 0 60px #ffcfa9, 0 0 100px #b9a018;
+    box-shadow: 0 0 60px #ffcfa9, 0 0 100px #b9a018 ;
 }
 .light_v2 .light_v23 {
-    -webkit-animation: laser 7.3s infinite;
+    -webkit-animation: laser 7.3s infinite 1s;
     background: #fffaa9;
     box-shadow: 0 0 60px #ffcfa9, 0 0 100px #b9a018;
 }
 .light_v2 .light_v24 {
-    -webkit-animation: laser 7.7s infinite;
+    -webkit-animation: laser 7.7s infinite 1.5s;
     background: #fffaa9;
     box-shadow: 0 0 60px #ffcfa9, 0 0 100px #b9a018;
 }
