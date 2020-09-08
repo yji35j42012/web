@@ -977,35 +977,50 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    left: 0;
-    bottom: -100px;
+    left: 5%;
+    bottom: -150px;
 }
 .light span{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100px;
+    filter: drop-shadow(0px  0px 10px #222 )
+            drop-shadow(0px  0px 20px #333 ) 
+            drop-shadow(0px  0px 30px #444 )
+            drop-shadow(0px  0px 35px #555 );
+    transform: rotateZ(0deg);
+    bottom: -150px;
+	animation: light 6s infinite alternate;
+}
+.light span::before{
+    content:'';
     display: block;
 	position:absolute;
 	width: 200%;
-	height: 200px;
+	height: 150px;
 	background: rgb(255,250,0);
 	background: linear-gradient(90deg, rgba(255, 255, 255, .1) 0%, rgba(255, 207, 169, .1) 100%);
-	bottom: -100px;
+    box-shadow: 0 0 60px #ffcfa9, 0 0 100px #b9a018;
+    bottom: -100px;
 	right: 50%;
 	-webkit-clip-path: polygon(0 0, 100% 40%, 100% 60%, 0% 100%);
 	clip-path: polygon(0 0, 100% 40%, 100% 60%, 0% 100%);
-	transform: rotateZ(0deg);
-	transform-origin: right;
-	animation: light 6s infinite alternate;
+	/* bottom: -70px; */
+	/* transform-origin: right; */
 }
+
 .light .light2 {
     animation:  light 6.5s infinite alternate .5s;
-    height: 170px;
+    height: 120px;
 }
 .light .light3 {
     animation: light 7s infinite alternate 1s;
-    height: 150px;
+    height: 100px;
 }
 .light .light4 {
     animation: light 7.3s infinite alternate 2s;
-    height: 220px;
+    height: 130px;
 }
 @keyframes light {
   0% {
@@ -1017,67 +1032,6 @@
 }
   
 /*  */
-.light_v2{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    bottom: -20px;
-}
-.light_v2 span{
-    display: block;
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    width: 3px;
-    height: 500%;
-    background: #fffaa9;
-    box-shadow: 0 0 60px #ffcfa9, 0 0 100px #b9a018;
-    -moz-transform-origin: 0 100%;
-    -ms-transform-origin: 0 100%;
-    -webkit-transform-origin: 0 100%;
-    transform-origin: 0 100%;
-    transform: rotate(-75deg);
-    -webkit-animation: laser 7s infinite;
-}
-
-.light_v2 .light_v22 {
-    -webkit-animation: laser 7.5s infinite .5s;
-    background: #fffaa9;
-    box-shadow: 0 0 60px #ffcfa9, 0 0 100px #b9a018 ;
-}
-.light_v2 .light_v23 {
-    -webkit-animation: laser 7.3s infinite 1s;
-    background: #fffaa9;
-    box-shadow: 0 0 60px #ffcfa9, 0 0 100px #b9a018;
-}
-.light_v2 .light_v24 {
-    -webkit-animation: laser 7.7s infinite 1.5s;
-    background: #fffaa9;
-    box-shadow: 0 0 60px #ffcfa9, 0 0 100px #b9a018;
-}
-  
-@-webkit-keyframes laser {
-    0% {
-        -moz-transform: rotate(-75deg);
-        -ms-transform: rotate(-75deg);
-        -webkit-transform: rotate(-75deg);
-        transform: rotate(-75deg);
-    }
-    50% {
-        -moz-transform: rotate(75deg);
-        -ms-transform: rotate(75deg);
-        -webkit-transform: rotate(75deg);
-        transform: rotate(75deg);
-    }
-    100% {
-        -moz-transform: rotate(-75deg);
-        -ms-transform: rotate(-75deg);
-        -webkit-transform: rotate(-75deg);
-        transform: rotate(-75deg);
-    }
-}
-
 
 
 /*  */
