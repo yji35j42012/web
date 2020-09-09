@@ -1598,6 +1598,9 @@ footer{
 	.product_txt{
 		padding: 30px 15px; 
 	}
+	.product_pic{
+		height: 150px;
+	}
 }
 
 
