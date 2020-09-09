@@ -983,7 +983,7 @@
 .light span{
     display: block;
     position: absolute;
-    width: 8px;
+    width: 15px;
     height: 30%;
     transform: rotate(-250deg);
     bottom: -50%;
@@ -1033,7 +1033,7 @@
 .light_v2 span{
     display: block;
     position: absolute;
-    width: 8px;
+    width: 15px;
     height: 30%;
     transform: rotate(-90deg);
     top: -50%;
@@ -1096,7 +1096,7 @@
 .light_v3 span{
     display: block;
     position: absolute;
-    width: 8px;
+    width: 15px;
     height: 30%;
     transform: rotate(-150deg);
     top: 0;
@@ -1118,15 +1118,11 @@
 .light_v3 .light_v31{
     animation: light_v3 6s infinite alternate;
 }
-
-
 .light_v3 .light_v32{
     transform: rotate(150deg);
     left: 120%;
     animation: light_v3-1 6s infinite alternate;
 }
-
-
 .light_v3 .light_v33{
     animation: light_v3 7s infinite alternate 3s;
 }
