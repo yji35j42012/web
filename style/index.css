@@ -1594,6 +1594,12 @@ footer{
 	}
 }
 
+@media (max-width: 320px){
+	.product_txt{
+		padding: 30px 15px; 
+	}
+}
+
 
 @media (pointer: fine),
 (pointer: fine) and (-moz-touch-enabled: 0),
