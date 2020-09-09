@@ -524,7 +524,7 @@
 /* 浮動粒子 中間擴散 設定在偽元素 */
 
 /* 浮動粒子(三角形) 中間擴散 設定在偽元素 */
-.bg_triangle_in_out{position: relative;}
+
 .bg_triangle_in_out:after{
     content: "";
     pointer-events: none;
@@ -535,7 +535,7 @@
     top: 0;
     -webkit-animation: bg-animate 10s 0s linear infinite both paused;
     animation: bg-animate 10s 0s linear infinite both paused;
-    background: url(../images/bg_sports_move.png) center/cover;
+    background: url(../images/bg_triangle_move.png) center/cover;
     padding-bottom: 23.02083%;
 }
 .active .bg_triangle_in_out:after{
@@ -978,41 +978,47 @@
     width: 100%;
     height: 100%;
     left: 0;
-    bottom: -100px;
+    bottom: -50px;
 }
 .light span{
     display: block;
-	position:absolute;
-	width: 200%;
-	height: 200px;
-	background: rgb(255,250,0);
-	background: linear-gradient(90deg, rgba(255, 255, 255, .1) 0%, rgba(255, 207, 169, .1) 100%);
-	bottom: -100px;
-	right: 50%;
-	-webkit-clip-path: polygon(0 0, 100% 40%, 100% 60%, 0% 100%);
-	clip-path: polygon(0 0, 100% 40%, 100% 60%, 0% 100%);
-	transform: rotateZ(0deg);
-	transform-origin: right;
-	animation: light 6s infinite alternate;
+    position: absolute;
+    width: 15px;
+    height: 30%;
+    transform: rotate(-250deg);
+    bottom: -50%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    animation:  light 6s infinite alternate;
 }
+.light span::after{
+    content:"";
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(255, 255, 255, .1) 0%, rgba(255, 207, 169, .1) 100%);
+    box-shadow: 0 0 30px 5px rgba(51, 51, 51, .1),
+                0 0 30px 10px rgba(51, 51, 51, .1);
+    transform: scaleY(1.3) perspective(.5em) rotateX(5deg);
+}
+  
 .light .light2 {
     animation:  light 6.5s infinite alternate .5s;
-    height: 170px;
 }
 .light .light3 {
     animation: light 7s infinite alternate 1s;
-    height: 150px;
 }
 .light .light4 {
     animation: light 7.3s infinite alternate 2s;
-    height: 220px;
 }
 @keyframes light {
   0% {
-    transform: rotateZ(0deg);
+    transform: rotate(-250deg);
   }
   100% {
-    transform: rotateZ(180deg);
+    transform: rotate(-110deg);
   }
 }
   
@@ -1022,61 +1028,125 @@
     width: 100%;
     height: 100%;
     left: 0;
-    bottom: -20px;
+    top: 0;
 }
 .light_v2 span{
     display: block;
     position: absolute;
-    left: 50%;
-    bottom: 0;
-    width: 3px;
-    height: 500%;
-    background: #fffaa9;
-    box-shadow: 0 0 60px #ffcfa9, 0 0 100px #b9a018;
-    -moz-transform-origin: 0 100%;
-    -ms-transform-origin: 0 100%;
-    -webkit-transform-origin: 0 100%;
-    transform-origin: 0 100%;
-    -webkit-animation: laser 7s infinite;
+    width: 15px;
+    height: 30%;
+    transform: rotate(-90deg);
+    top: -50%;
+    left: -25%;
 }
-
-.light_v2 .light_v22 {
-    -webkit-animation: laser 7.5s infinite;
-    background: #fffaa9;
-    box-shadow: 0 0 60px #ffcfa9, 0 0 100px #b9a018;
+.light_v2 span::after{
+    content:"";
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(255, 255, 255, .1) 0%, rgba(255, 207, 169, .1) 100%);
+    box-shadow: 0 0 30px 5px rgba(51, 51, 51, .1),
+                0 0 30px 10px rgba(51, 51, 51, .1);
+    transform: scaleY(1.3) perspective(.5em) rotateX(5deg);
 }
-.light_v2 .light_v23 {
-    -webkit-animation: laser 7.3s infinite;
-    background: #fffaa9;
-    box-shadow: 0 0 60px #ffcfa9, 0 0 100px #b9a018;
+.light_v2 .light_v21{
+    animation: light_v2 6s infinite alternate;
 }
-.light_v2 .light_v24 {
-    -webkit-animation: laser 7.7s infinite;
-    background: #fffaa9;
-    box-shadow: 0 0 60px #ffcfa9, 0 0 100px #b9a018;
+.light_v2 .light_v22{
+    left: 125%;
+    top: -55%;
+    transform: rotate(90deg);
+    animation: light_v2-1 6s infinite alternate;
 }
-  
-@-webkit-keyframes laser {
+.light_v2 .light_v23{
+    animation: light_v2 7s infinite alternate 3s;
+}
+.light_v2 .light_v24{
+    left: 125%;
+    top: -55%;
+    transform: rotate(90deg);
+    animation: light_v2-1 7s infinite alternate 3s;
+}
+@keyframes light_v2 {
     0% {
-        -moz-transform: rotate(-75deg);
-        -ms-transform: rotate(-75deg);
-        -webkit-transform: rotate(-75deg);
-        transform: rotate(-75deg);
-    }
-    50% {
-        -moz-transform: rotate(75deg);
-        -ms-transform: rotate(75deg);
-        -webkit-transform: rotate(75deg);
-        transform: rotate(75deg);
+        transform: rotate(-90deg);
     }
     100% {
-        -moz-transform: rotate(-75deg);
-        -ms-transform: rotate(-75deg);
-        -webkit-transform: rotate(-75deg);
-        transform: rotate(-75deg);
+      transform: rotate(-10deg);
     }
 }
-
-
-
+@keyframes light_v2-1 {
+    0% {
+        transform: rotate(90deg);
+    }
+    100% {
+      transform: rotate(10deg);
+    }
+}
 /*  */
+/*  */
+.light_v3{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+.light_v3 span{
+    display: block;
+    position: absolute;
+    width: 15px;
+    height: 30%;
+    transform: rotate(-150deg);
+    top: 0;
+    bottom: 0;
+    left: -20%;
+    margin: auto 0;
+}
+.light_v3 span::after{
+    content:"";
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(255, 255, 255, .1) 0%, rgba(255, 207, 169, .1) 100%);
+    box-shadow: 0 0 30px 5px rgba(51, 51, 51, .1),
+                0 0 30px 10px rgba(51, 51, 51, .1);
+    transform: scaleY(1.3) perspective(.5em) rotateX(5deg);
+}
+.light_v3 .light_v31{
+    animation: light_v3 6s infinite alternate;
+}
+.light_v3 .light_v32{
+    transform: rotate(150deg);
+    left: 120%;
+    animation: light_v3-1 6s infinite alternate;
+}
+.light_v3 .light_v33{
+    animation: light_v3 7s infinite alternate 3s;
+}
+.light_v3 .light_v34{
+    transform: rotate(150deg);
+    left: 120%;
+    animation: light_v3-1 7s infinite alternate 3s;
+}
+@keyframes light_v3 {
+    0% {
+        transform: rotate(-150deg);
+    }
+    100% {
+      transform: rotate(-25deg);
+    }
+}
+@keyframes light_v3-1 {
+    0% {
+        transform: rotate(150deg);
+    }
+    100% {
+      transform: rotate(25deg);
+    }
+} 
+/*  */
+
+
