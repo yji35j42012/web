@@ -45,6 +45,7 @@ body{
 	height: 60px;
 	display: flex;
 	background: #071121;
+	opacity: 0.9;
 	color: #fff;
 	align-items: center;
 	justify-content: space-between;
