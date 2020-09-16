@@ -1016,20 +1016,20 @@
     opacity: .2;
 }
 .light .light1{
-    animation: light 6s infinite alternate;
+    animation: light 5s infinite alternate;
 }
 .light .light2{
     transform: rotate(180deg);
     left: 120%;
-    animation: light1 6s infinite alternate;
+    animation: light1 5s infinite alternate;
 }
 .light .light3{
-    animation: light 7s infinite alternate 3s;
+    animation: light 5s infinite alternate 3s;
 }
 .light .light4{
     transform: rotate(180deg);
     left: 120%;
-    animation: light1 7s infinite alternate 3s;
+    animation: light1 5s infinite alternate 3s;
 }
 @keyframes light {
     0% {
