@@ -1,7 +1,9 @@
 
 body{
 	background: #000;
-	overflow: hidden;
+	overflow-x: hidden;
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
 }
 .wrap{
 	width: 100%;
@@ -82,15 +84,15 @@ body{
 	height: 40px;
 }
 .loading .logo::before{
-	top: 43px;
-    left: 77px;
+	top: 41px;
+    left: 78px;
 	transform: scale(1);
 	transform-origin: center;
 	animation: logo_star 3s infinite linear;
 }
 .loading .logo::after{
 	top: 55px;
-    left: 350px;
+    left: 353px;
 	transform-origin: center;
 	animation: logo_star 3s infinite linear;
 }
@@ -1500,12 +1502,12 @@ footer{
 		height: 103px;
 	}
 	.loading .logo::before{
-		top: 18px;
-		left: 35px;
+		top: 12px;
+		left: 30px;
 	}
 	.loading .logo::after{
-		top: 23px;
-		left: 173px;
+		top: 17px;
+    	left: 165px;
 	}
 	.load_num{
 		font-size: 14px;
