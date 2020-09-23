@@ -128,6 +128,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 .bg_bubbles_in_out li{
     position: absolute;
@@ -1016,20 +1017,20 @@
     opacity: .4;
 }
 .light .light1{
-    animation: light 7s infinite alternate;
+    animation: light 10s infinite alternate;
 }
 .light .light2{
     transform: rotate(180deg);
     left: 120%;
-    animation: light1 7s infinite alternate;
+    animation: light1 10s infinite alternate;
 }
 .light .light3{
-    animation: light 9s infinite alternate 3s;
+    animation: light 12s infinite alternate 3s;
 }
 .light .light4{
     transform: rotate(180deg);
     left: 120%;
-    animation: light1 9s infinite alternate 3s;
+    animation: light1 12s infinite alternate 3s;
 }
 @keyframes light {
     0% {
