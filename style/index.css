@@ -58,6 +58,8 @@ body{
 	top: 0;
 	left: 0;
 	z-index: 11;
+	overflow-x: hidden;
+	overflow-y: auto;
 }
 .loading{
 	width: 100%;
@@ -1529,7 +1531,7 @@ footer{
     	height: 100%;	
 	}
 	.login_title{
-		margin-bottom: 30%;
+		margin-bottom: 50px;
 	}
 	.banner_item:not(.banner_item4){
 		flex-direction: column-reverse;
