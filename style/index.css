@@ -48,6 +48,7 @@ body{
 	text-shadow: none;
 	-webkit-background-clip: text;
 }
+.mod_overflow_hid{overflow: hidden;}
 /* share use end*/
 .mask{
 	position: fixed;
@@ -56,7 +57,7 @@ body{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: rgba(0,0,0,.9);
+	background: rgba(0,0,0,.7);
 	top: 0;
 	left: 0;
 	z-index: 11;
@@ -74,52 +75,53 @@ body{
 }
 
 .loading .logo{
-	width: 460px;
-	height: 204px;
+	width: 200px;
+	height: 88px;
 	
 }
 .loading .logo::before,
 .loading .logo::after{
 	width: 41px;
 	height: 40px;
+	transform: scale(1) rotate(0deg);
 }
 .loading .logo::before{
-	top: 41px;
-    left: 78px;
-	transform: scale(1);
+	top: 7px;
+    left: 24px;
+	
 	transform-origin: center;
-	animation: logo_star 3s infinite linear;
+	animation: logo_star 4s infinite alternate;
 }
 .loading .logo::after{
-	top: 55px;
-    left: 353px;
+	top: 13px;
+    left: 141px;
 	transform-origin: center;
-	animation: logo_star 3s infinite linear;
+	animation: logo_star 4s infinite alternate ;
 }
 @keyframes logo_star{
 	0%{
-		transform:scale(1);
+		transform:scale(1) rotate(0deg);
 		opacity: 1;
 	}
-	25%{
+	/* 25%{
 		opacity: .5;
 	}
 	50%{
-		transform: scale(.6);
+		transform: scale(.6) rotate(360deg);
 		opacity: 1;
 	}
 	75%{
 		opacity: .5;
-	}
+	} */
 	100%{
-		transform: scale(1);
-		opacity: 1;
+		transform: scale(.6) rotate(360deg);
+		opacity: .5;
 	}
 }
 
 .loading_box{
 	position: relative;
-	width: 460px;
+	width: 230px;
 	height: 3px;
 	border-radius: 50px;
 	background: #007aad;
@@ -128,7 +130,7 @@ body{
 .load_num{
 	display: block;
 	color: #2b9ebf;
-	font-size: 16px;
+	font-size: 14px;
 }
 .loading_bar {
 	position: absolute;
@@ -198,7 +200,7 @@ body{
 	width: 100%;
 	max-width: 860px;
 	display: flex;
-	background: #111f31;
+	background: #244269;
 	box-shadow: 5px 5px 5px 0px rgba(0,0,0,.8);
 	
 }
@@ -1305,7 +1307,8 @@ img.icon_poker4{
 	font-size: 21px;
 	box-shadow: 0 1px 0 #fff inset, 0 -1px 0 rgba(0,0,0,0.25) inset, 0 17px 12px -12px rgba(0,0,0,0.7);
 }
-.contact.active .submit_btn{
+.contact.active .submit_btn,
+.login_btn{
 	transform: translateY(0);
 	opacity: 1;
 	transition-delay: .8s;
@@ -1497,7 +1500,7 @@ footer{
 }
 @media (max-width: 768px){
 
-	.loading .logo{
+	/* .loading .logo{
 		width: 230px;
 		height: 103px;
 	}
@@ -1514,7 +1517,7 @@ footer{
 	}
 	.loading_box{
 		width: 230px;
-	}
+	} */
 	.login_box{
 		height: 100%;
 	}
@@ -1937,10 +1940,10 @@ footer{
 @media (pointer: fine),
 (pointer: fine) and (-moz-touch-enabled: 0),
 screen and (-ms-high-contrast: active), (-ms-high-contrast: none){
-	.login_btn:hover{
+	/* .login_btn:hover{
 		background: linear-gradient(to right, rgba(255,255,195,1) 40%,rgba(240,213,122,1) 83%,rgba(204,148,92,1) 100%); 
 		box-shadow:  0 -1px 0 rgba(255,255,255,0.4) inset, 0 0 0 1px rgba(0,0,0,0.4), 0 1px 3px 1px rgba(0,0,0,0.6);
-	}
+	} */
 	.banner_dots li:not(.on):hover{
 		background: #fff;
 		box-shadow: 0px 0px 2px 1px rgba(7, 135, 227,0.6),
@@ -1967,7 +1970,8 @@ screen and (-ms-high-contrast: active), (-ms-high-contrast: none){
 		width: 100%;
 		opacity: 1;
 	}
-	.contact.active .submit_btn:hover{
+	.contact.active .submit_btn:hover,
+	.login_btn:hover{
 		background: linear-gradient(to bottom,  rgb(205, 181, 125) 0%,rgba(255,255,198,1) 100%);
 		-webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.15) inset, 0 -1px 0 rgba(255,255,255,0.4) inset, 0 0 0 1px rgba(0,0,0,0.4), 0 1px 3px 1px rgba(0,0,0,0.6);
 		box-shadow: 0 1px 0 rgba(0,0,0,0.15) inset, 0 -1px 0 rgba(255,255,255,0.4) inset, 0 0 0 1px rgba(0,0,0,0.4), 0 1px 3px 1px rgba(0,0,0,0.6);
@@ -2010,7 +2014,8 @@ screen and (-ms-high-contrast: active), (-ms-high-contrast: none){
 	width: 100%;
 	opacity: 1;
 }
-.contact.active .submit_btn:active{
+.contact.active .submit_btn:active
+.login_btn:active{
 	background: linear-gradient(to bottom,  rgb(205, 181, 125) 0%,rgba(255,255,198,1) 100%);
 	-webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.15) inset, 0 -1px 0 rgba(255,255,255,0.4) inset, 0 0 0 1px rgba(0,0,0,0.4), 0 1px 3px 1px rgba(0,0,0,0.6);
 	box-shadow: 0 1px 0 rgba(0,0,0,0.15) inset, 0 -1px 0 rgba(255,255,255,0.4) inset, 0 0 0 1px rgba(0,0,0,0.4), 0 1px 3px 1px rgba(0,0,0,0.6);
@@ -2022,7 +2027,8 @@ screen and (-ms-high-contrast: active), (-ms-high-contrast: none){
 .game_list li:active::before{
 	opacity: 1;
 }
-.submit_btn:active{
+.submit_btn:active,
+.login_btn:active{
 	background: linear-gradient(to bottom,  rgb(205, 181, 125) 0%,rgba(255,255,198,1) 100%);
 	-webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.15) inset, 0 -1px 0 rgba(255,255,255,0.4) inset, 0 0 0 1px rgba(0,0,0,0.4), 0 1px 3px 1px rgba(0,0,0,0.6);
     box-shadow: 0 1px 0 rgba(0,0,0,0.15) inset, 0 -1px 0 rgba(255,255,255,0.4) inset, 0 0 0 1px rgba(0,0,0,0.4), 0 1px 3px 1px rgba(0,0,0,0.6);
