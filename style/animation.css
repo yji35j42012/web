@@ -988,7 +988,7 @@
     position: absolute;
     width: 8px;
     height: 30%;
-    transform: rotate(-180deg);
+    transform: rotate(-155deg);
     top: 0;
     bottom: 0;
     left: -20%;
@@ -1019,32 +1019,32 @@
     animation: light 10s infinite alternate;
 }
 .light .light2{
-    transform: rotate(180deg);
+    transform: rotate(155deg);
     left: 120%;
     animation: light1 10s infinite alternate;
 }
 .light .light3{
-    animation: light 12s infinite alternate 3s;
+    animation: light 10s infinite alternate 6s;
 }
 .light .light4{
     transform: rotate(180deg);
     left: 120%;
-    animation: light1 12s infinite alternate 3s;
+    animation: light1 10s infinite alternate 6s;
 }
 @keyframes light {
     0% {
-        transform: rotate(-180deg);
+        transform: rotate(-155deg);
     }
     100% {
-      transform: rotate(-0deg);
+      transform: rotate(-25deg);
     }
 }
 @keyframes light1 {
     0% {
-        transform: rotate(180deg);
+        transform: rotate(155deg);
     }
     100% {
-      transform: rotate(0deg);
+      transform: rotate(25deg);
     }
 } 
 /*  */
