@@ -564,7 +564,7 @@ body{
 	background: url('../images/bg_banner01.png')no-repeat center / cover;
 }
 img.pic_peopel1{
-    height: 82%;
+    height: 79%;
 	top: 30%;
 	left: 22%;
 	opacity: 0;
@@ -572,7 +572,7 @@ img.pic_peopel1{
 }
 .active.banner_item1 .pic_peopel1{
 	opacity: 1;
-	top: 15%;
+	top: 20%;
 }
 img.pic_peopel2{
     height: 55%;
