@@ -1027,10 +1027,20 @@
     animation: light 10s infinite alternate 6s;
 }
 .light .light4{
-    transform: rotate(180deg);
+    transform: rotate(155deg);
     left: 120%;
     animation: light1 10s infinite alternate 6s;
 }
+.light .light5{
+    transform: rotate(25deg);
+    animation: light_trun 10s infinite alternate 10s;
+}
+.light .light6{
+    transform: rotate(25deg);
+    left: 120%;
+    animation: light1_turn 10s infinite alternate 10s;
+}
+
 @keyframes light {
     0% {
         transform: rotate(-155deg);
@@ -1039,14 +1049,82 @@
       transform: rotate(-25deg);
     }
 }
+@keyframes light_trun {
+    0% {
+        transform: rotate(-25deg);
+        
+    }
+    100% {
+        transform: rotate(-155deg);
+    }
+}
 @keyframes light1 {
     0% {
         transform: rotate(155deg);
+        
     }
     100% {
-      transform: rotate(25deg);
+        transform: rotate(25deg);
     }
 } 
+@keyframes light1_turn {
+    0% {
+        transform: rotate(25deg);
+        
+    }
+    100% {
+        transform: rotate(155deg);
+    }
+} 
+
+@media (max-width:768px){
+    .light span{
+        transform: rotate(-180deg);
+    }
+    .light .light2,
+    .light .light4{
+        transform: rotate(180deg);
+    }
+    .light .light5,
+    .light .light6{
+        transform: rotate(0deg);
+    }
+    @keyframes light {
+        0% {
+            transform: rotate(-180deg);
+        }
+        100% {
+          transform: rotate(0deg);
+        }
+    }
+    @keyframes light_trun {
+        0% {
+            transform: rotate(0deg);
+            
+        }
+        100% {
+            transform: rotate(-180deg);
+        }
+    }
+    @keyframes light1 {
+        0% {
+            transform: rotate(180deg);
+            
+        }
+        100% {
+            transform: rotate(0deg);
+        }
+    } 
+    @keyframes light1_turn {
+        0% {
+            transform: rotate(0deg);
+            
+        }
+        100% {
+            transform: rotate(180deg);
+        }
+    } 
+}
 /*  */
 
 
