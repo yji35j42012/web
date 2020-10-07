@@ -17,14 +17,14 @@
 
 	<!-- 最上列 -->
 	<div class="header">
-		<div class="logo"></div>
+		<div class="logo logo_title"></div>
 		<!-- 手機版 打開menu在 .menu_btn + active -->
 		<div class="menu_btn">
 			<i></i>
 		</div>
 		<div class="menu_panel">
 			<ul class="menu">
-				<li class="logo"></li>
+				<li class="logo logo_title"></li>
 				<li>
 					<a href="#move_about">關於我們</a>
 				</li>
@@ -376,8 +376,6 @@
 				<span class="light4"></span>
 				<span class="light5"></span>
 				<span class="light6"></span>
-				<!-- <span class="light7"></span>
-				<span class="light8"></span> -->
 			</div>
 			<!-- 光從左右中間打 -->
 
@@ -454,29 +452,29 @@
 
 	</div>
 	<!-- 聯絡我們 -->
-	<footer>© 2020 ROYAL Gaming. All Rights Reserved.</footer>
+	<footer>© 2020 I CASH Gaming. All Rights Reserved.</footer>
 
 
 
 
-	<!-- loading打開用 display:flex -->
-	<div class="mask" style="display: none">
+	<!-- loading打開用 display:flex，動畫加上active -->
+	<div class="mask load active" id="load" style="display: none;">
 		<div class="loading">
 			<div class="logo"></div>
-			<div class="load_num"><tt>80</tt> %</div>
+			<div class="load_num"><tt>100</tt> %</div>
 			<div class="loading_box">
 				<div class="loading_bar">
 					<!-- 控制跑條 left:0~100% -->
-					<span></span>
+					<span style="left: 99%;"></span>
 				</div>
 				<!-- 控制圓亮點 left:0~100% -->
-				<span class="light_ball"></span>
+				<span class="light_ball" style="left: 99%;"></span>
 			</div>
 
 		</div>
 	</div>
-	<!-- 登入頁打開用 display:flex -->
-	<div class="mask" style="display: none">
+	<!-- 登入頁打開用 display:flex，動畫加上active -->
+	<div class="mask login" style="display: none" id="signIn">
 		<div class="login_box">
 			<button class="login_close_btn"></button>
 			<div class="login_pic"></div>

@@ -552,13 +552,6 @@
 
 /* 浮動粒子 中間擴散 設定在偽元素 */
 
-
-
-
-
-
-
-
 /* 圖片本身浮動 */
 
 .right_left_move{
@@ -728,9 +721,7 @@
     height: 5px;
     background-color: white;
     transform: rotate(45deg);
-    /* 使星星模糊一点 */
     opacity: 0.2;
-    /* 动画名称 动画时间  速度  开始时间 次数 */
     animation: blinking 1s linear var(--d) infinite;
   }
 /* blinking : 闪烁 */
@@ -739,7 +730,6 @@
         opacity: 0.2;
     }
     50%{
-    /* 星星大小放大 1.5倍 ，旋转45度成菱形 */
     transform: scale(1.5) rotate(45deg);
         opacity: 1;
     }
