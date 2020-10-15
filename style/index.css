@@ -69,7 +69,6 @@ body{
 .header.active{
 	background-color: rgba(0,0,0,.8);
 }
-
 .logo {
 	position: relative;
 	width: 135px;
@@ -91,13 +90,12 @@ body{
 }
 .logo.logo_title::before{
 	top: 9px;
-    left: 19px;
+	left: 19px;
 }
 .logo.logo_title::after{
 	top: 13px;
-    left: 100px;
+	left: 100px;
 }
-
 .menu_panel{
 	height: 100%;
 }
@@ -116,18 +114,18 @@ body{
 }
 .menu > li:not(:first-child)::after{
 	content: '';
-    display: block;
-    width: 0%;
-    height: 3px;
+	display: block;
+	width: 0%;
+	height: 3px;
 	background-color: #dffafe;
 	box-shadow: 0px 0px 2px 1px rgba(7, 135, 227,0.6), 0px 0px 4px 3px rgba(7, 135, 227,0.4);
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 0;
 	margin: auto;
 	opacity: 0;
-    transition: 0.5s;
+	transition: 0.5s;
 }
 .menu li.logo_title{display: none;}
 .menu>li+li {
@@ -202,7 +200,6 @@ body{
 	color: #07bceb;
 	font-size: 15px;
 }
-
 .banner {
 	position: relative;
 	width: 100%;
@@ -286,7 +283,6 @@ body{
 	opacity: 1;
 	transform: translateY(0);
 }
-
 .banner_pic{
 	position: relative;
 	width: 55%;
@@ -305,7 +301,7 @@ body{
 	background: url('../images/bg_banner01.png')no-repeat center / cover;
 }
 img.pic_peopel1{
-    height: 79%;
+	height: 79%;
 	top: 30%;
 	left: 22%;
 	opacity: 0;
@@ -316,7 +312,7 @@ img.pic_peopel1{
 	top: 20%;
 }
 img.pic_peopel2{
-    height: 55%;
+	height: 55%;
 	top: 0%;
 	left: 25%;
 	opacity: 0;
@@ -327,16 +323,16 @@ img.pic_peopel2{
 	left: 15%;
 }
 img.pic_peopel3{
-    height: 67%;
+	height: 67%;
 	top: 4%;
 	left: 36%;
 	opacity: 0;
-    height: 67%;
+	height: 67%;
 	transition: all 500ms cubic-bezier(0.55, 0, 0.42, 1) .5s;
 }
 .active.banner_item1 .pic_peopel3{
 	opacity: 1;
-    left: 52%;
+	left: 52%;
 }
 img.pic_peopel4{
 	height: 85%;
@@ -345,12 +341,10 @@ img.pic_peopel4{
 	opacity: 0;
 	transition: all 500ms cubic-bezier(0.55, 0, 0.42, 1) .5s;
 }
-
 .active.banner_item1 .pic_peopel4{
 	opacity: 1;
-    top: -13%;
+	top: -13%;
 }
-
 .banner_item2{
 	background: url('../images/bg_banner02.png')no-repeat right center / cover;
 }
@@ -371,63 +365,43 @@ img.pic_peopel4{
 	border-radius: 50%;
 	border: 2px solid #ffffc3;
 	opacity: 0;
+	transform: translate(-70%, -100%);
 }
 .txt_icon li+li{
 	margin-left: 15px;
 }
 .txt_icon li:nth-child(1){
 	background: url('../images/icon_b2_1.svg')no-repeat center/ 70%;
-	transform: translate(-70%, -100%);
 	transition: all .2s cubic-bezier(0.55, 0, 0.42, 1) ;
-}
-.active.banner_item2 .txt_icon li:nth-child(1){
-	transform: translate(0, 0);
-	opacity: 1;
 }
 .txt_icon li:nth-child(2){
 	background: url('../images/icon_b2_2.svg')no-repeat center/ 70%;
-	transform: translate(-70%, -100%);
 	transition: all .2s cubic-bezier(0.55, 0, 0.42, 1) .2s;
-}
-.active.banner_item2 .txt_icon li:nth-child(2){
-	transform: translate(0, 0);
-	opacity: 1;
 }
 .txt_icon li:nth-child(3){
 	background: url('../images/icon_b2_3.svg')no-repeat center/ 70%;
-	transform: translate(-70%, -100%);
 	transition: all .2s cubic-bezier(0.55, 0, 0.42, 1) .4s;
-}
-.active.banner_item2 .txt_icon li:nth-child(3){
-	transform: translate(0, 0);
-	opacity: 1;
 }
 .txt_icon li:nth-child(4){
 	background: url('../images/icon_b2_4.svg')no-repeat center/ 70%;
-	transform: translate(-70%, -100%);
 	transition: all .2s cubic-bezier(0.55, 0, 0.42, 1) .6s;
-}
-.active.banner_item2 .txt_icon li:nth-child(4){
-	transform: translate(0, 0);
-	opacity: 1;
 }
 .txt_icon li:nth-child(5){
 	background: url('../images/icon_b2_5.svg')no-repeat center/ 70%;
-	transform: translate(-70%, -100%);
 	transition: all .2s cubic-bezier(0.55, 0, 0.42, 1)  .8s;
 }
-.active.banner_item2 .txt_icon li:nth-child(5){
+.active.banner_item2 .txt_icon li{
 	transform: translate(0, 0);
 	opacity: 1;
 }
 img.pic_cell1{
 	height: 23%;
-    top: 59%;
-    left: 8%;
+	top: 59%;
+	left: 8%;
 }
 img.pic_cell2{
 	height: 54%;
-    top: 16%;
+	top: 16%;
 	left: 10%;
 	opacity: 0;
 	transform: translate(40% , 30%) scale(.2);
@@ -439,7 +413,7 @@ img.pic_cell2{
 }
 img.pic_cell3{
 	height: 57%;
-    top: -5%;
+	top: -5%;
 	left: 48%;
 	opacity: 0;
 	transform: translate(-40% , 40%) scale(.2);
@@ -451,7 +425,7 @@ img.pic_cell3{
 }
 img.pic_cell4{
 	height: 43%;
-    top: 21%;
+	top: 21%;
 	left: 51%;
 	transform: translate(-40% , 30%) scale(.2);
 	transition: all 300ms cubic-bezier(0.55, 0, 0.42, 1) .3s;
@@ -478,15 +452,14 @@ img.icon_poker4{
 	height: 45%;
 	top: 5%;
 	right: 32%;
-    transform: rotate(0deg);
+	transform: rotate(0deg);
 	transform-origin: center bottom;
 	margin: 0;
 	transition: all .5s ease .3s;
-
 }
 .active .icon_poker1{
 	height: 50%;
-    transform: rotate(30deg);
+	transform: rotate(30deg);
 }
 .active .icon_poker2{
 	height: 50%;
@@ -585,12 +558,12 @@ img.icon_poker4{
 	border: 1px solid #fff;
 	transition: .2s;
 }
+.banner_dots li+li{
+	margin-left: 20px;
+}
 .banner_dots li.on{
 	background: #fff;
 	cursor: default;
-}
-.banner_dots li+li{
-	margin-left: 20px;
 }
 
 .product {
@@ -642,7 +615,7 @@ img.icon_poker4{
 	-ms-overflow-style: none;
 }
 .game_box::-webkit-scrollbar {
-    display: none;
+	display: none;
 }
 .game_list {
 	width: 100%;
@@ -671,7 +644,6 @@ img.icon_poker4{
 	background: url('../images/game-04.jpg')no-repeat center;
 	background-size: 101% ;
 }
-
 .game_list li::before{
 	display: block;
 	content:'';
@@ -684,7 +656,6 @@ img.icon_poker4{
 	opacity: 0;
 	transition: opacity .3s;
 }
-
 .game_list li:nth-child(1)::before{
 	background: url('../images/icon_game_h1.svg')no-repeat center/50% ,
 	rgba(0,0,0,.8);
@@ -938,15 +909,15 @@ img.icon_poker4{
 }
 .sop::before{
 	content: '';
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    bottom: 0;
-    right: 0;
-    margin: auto;
-    display: block;
-    width: calc(100% - 4px);
-    height: calc(100% - 4px);
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	display: block;
+	width: calc(100% - 4px);
+	height: calc(100% - 4px);
 	background: #2d3b66;
 	background: -moz-linear-gradient(left,  #2d3b66 0%, #000000 100%);
 	background: -webkit-linear-gradient(left,  #2d3b66 0%,#000000 100%);
@@ -1056,7 +1027,7 @@ img.icon_poker4{
 	animation: submit_bounce 2s infinite linear;
 }
 @-webkit-keyframes submit_bounce{
-    0%, 20%, 53%, 80%, 100% {
+	0%, 20%, 53%, 80%, 100% {
 		animation-timing-function: cubic-bezier(.215, .61, .355, 1);
 		transform: translateZ(0);
 	}
@@ -1073,7 +1044,7 @@ img.icon_poker4{
 	}
 }
 @keyframes submit_bounce{
-    0%, 20%, 53%, 80%, 100% {
+	0%, 20%, 53%, 80%, 100% {
 		animation-timing-function: cubic-bezier(.215, .61, .355, 1);
 		transform: translateZ(0);
 	}
@@ -1155,7 +1126,7 @@ footer{
 	align-items: center;
 	flex-direction: column;
 }
-.load{background: transparent;}
+.load{ background: transparent;}
 .load .loading{
 	position: absolute;
 	border-radius: 50%;
@@ -1171,6 +1142,7 @@ footer{
 	height: 100%;
 	border-radius: 0;
 }
+
 .loading .logo{
 	width: 200px;
 	height: 88px;
@@ -1184,13 +1156,13 @@ footer{
 }
 .loading .logo::before{
 	top: 7px;
-    left: 24px;
+	left: 24px;
 	transform-origin: center;
 	animation: logo_star 4s infinite alternate;
 }
 .loading .logo::after{
 	top: 13px;
-    left: 141px;
+	left: 141px;
 	transform-origin: center;
 	animation: logo_star 4s infinite alternate ;
 }
@@ -1271,13 +1243,14 @@ footer{
 		opacity: 1;
 	}
 }
-.login.active{
-	opacity: 1;
-}
 .login{
 	opacity: 0;
 	transition-duration:1s;
 }
+.login.active{
+	opacity: 1;
+}
+
 .login_box{
 	position: relative;
 	width: 100%;
@@ -1285,7 +1258,6 @@ footer{
 	display: flex;
 	background: #244269;
 	box-shadow: 5px 5px 5px 0px rgba(0,0,0,.8);
-	
 }
 .login_close_btn{
 	position: absolute;
@@ -1370,7 +1342,7 @@ footer{
 	display: block;
 	position: absolute;
 	width: 10px;
-    height: 5px;
+	height: 5px;
 	border-width: 2px 2px;
 	border-style: none none solid solid;
 	border-color: #ffffff #ffffff;
@@ -1386,12 +1358,12 @@ footer{
 	background: linear-gradient(to right, rgba(255,255,195,1) 40%,rgba(240,213,122,1) 83%,rgba(204,148,92,1) 100%); 
 	border-radius: 3px;
 	margin-bottom: 30px;
-	box-shadow:  0 -1px 0 rgba(0,0,0,0.25) inset, 0 17px 12px -12px rgba(0,0,0,0.7);
-	transition:  .4s;
+	box-shadow: 0 -1px 0 rgba(0,0,0,0.25) inset, 0 17px 12px -12px rgba(0,0,0,0.7);
+	transition: .4s;
 }
 .login_btn:active{
 	background: linear-gradient(to right, rgba(255,255,195,1) 40%,rgba(240,213,122,1) 83%,rgba(204,148,92,1) 100%); 
-	box-shadow:  0 -1px 0 rgba(255,255,255,0.4) inset, 0 0 0 1px rgba(0,0,0,0.4), 0 1px 3px 1px rgba(0,0,0,0.6);
+	box-shadow: 0 -1px 0 rgba(255,255,255,0.4) inset, 0 0 0 1px rgba(0,0,0,0.4), 0 1px 3px 1px rgba(0,0,0,0.6);
 }
 .login_forgot_btn{
 	display: block;
@@ -1520,7 +1492,7 @@ footer{
 	.login_pic{
 		position: absolute;
 		width: 100%;
-    	height: 100%;	
+		height: 100%;	
 	}
 	.login_title{
 		margin-bottom: 50px;
@@ -1556,8 +1528,6 @@ footer{
 		top: -10%;
 		left: 26%;
 	}
-
-
 	.banner_item:nth-child(2) {
 		background: url(../images/bg_banner02.png)no-repeat center / cover;
 	}
@@ -1970,7 +1940,6 @@ screen and (-ms-high-contrast: active), (-ms-high-contrast: none){
 	.game_list li:hover::before{
 		opacity: 1;
 	}
-
 	.partner_ul li:hover{
 		bottom: 20px;
 	}
@@ -1991,9 +1960,9 @@ screen and (-ms-high-contrast: active), (-ms-high-contrast: none){
 }
 .sp_btn:nth-child(2):active{
 	box-shadow: 0px 0px 2px 1px rgba(255, 255, 255,0.6),
-	0px 0px 6px 2px rgba(255, 255, 255,0.4),
-	inset 0px 0px 2px 1px rgba(255, 255, 255,0.6),
-	inset 0px 0px 6px 2px rgba(255, 255, 255,0.4);
+				0px 0px 6px 2px rgba(255, 255, 255,0.4),
+				inset 0px 0px 2px 1px rgba(255, 255, 255,0.6),
+				inset 0px 0px 6px 2px rgba(255, 255, 255,0.4);
 	border:1px solid white;
 }
 
@@ -2018,7 +1987,7 @@ screen and (-ms-high-contrast: active), (-ms-high-contrast: none){
 .login_btn:active{
 	background: linear-gradient(to bottom,  rgb(205, 181, 125) 0%,rgba(255,255,198,1) 100%);
 	-webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.15) inset, 0 -1px 0 rgba(255,255,255,0.4) inset, 0 0 0 1px rgba(0,0,0,0.4), 0 1px 3px 1px rgba(0,0,0,0.6);
-    box-shadow: 0 1px 0 rgba(0,0,0,0.15) inset, 0 -1px 0 rgba(255,255,255,0.4) inset, 0 0 0 1px rgba(0,0,0,0.4), 0 1px 3px 1px rgba(0,0,0,0.6);
+	box-shadow: 0 1px 0 rgba(0,0,0,0.15) inset, 0 -1px 0 rgba(255,255,255,0.4) inset, 0 0 0 1px rgba(0,0,0,0.4), 0 1px 3px 1px rgba(0,0,0,0.6);
 }
 .partner_ul li:active{
 	bottom: 20px;
